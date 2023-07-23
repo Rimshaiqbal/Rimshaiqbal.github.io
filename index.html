@@ -124,7 +124,7 @@
         <img src="Book Cover.jpg" alt="">
         <div class="projects-layer">
             <h4>Book Cover</h4>
-            <p>The book cover I created during my Photoshop course</p>
+            <p>During my Photoshop class, I had the exciting opportunity to design a book cover from scratch. The project was a hands-on exercise that allowed me to apply various Photoshop techniques</p>
             
         </div>
     </div>
@@ -133,7 +133,7 @@
         <img src="Logo project (1).png" alt="">
         <div class="projects-layer">
             <h4>Logo</h4>
-            <p>I created this Logo during my Adobe Illustrator course</p>
+            <p>I created this logo during my Adobe Illustrator course. It was a fantastic opportunity to learn and apply various design techniques. I'm proud of the outcome, and I'd love to share it with you</p>
             
         </div>
     </div>
@@ -142,7 +142,7 @@
         <img src="wff.png" alt="">
         <div class="projects-layer">
             <h4>Wireframe</h4>
-            <p>Presenting the web design wireframe I created during my Adobe Illustrator learning journey</p>
+            <p>Presenting the web design wireframe I created during my Adobe Illustrator learning journey. It was an exciting project that allowed me to explore different design elements and practice my skills.</p>
            
         </div>
     </div>
@@ -166,10 +166,10 @@
     </div>
 
     <div class="projects-box">
-        <img src="portfolio L.png" alt="">
+        <img src="R.logo.png" alt="">
         <div class="projects-layer">
             <h4>Portfolio logo</h4>
-            <p>I created this simple logo while creating my portfolio website</p>
+            <p>I created my name logo with Adobe Illustrator.</p>
             
         </div>
     </div>
@@ -209,28 +209,13 @@
                 </div>
             </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                             </div>
-                             <div class="field email">
-                                <input type="text" placeholder="Email" required>
-                             </div>
-                            </div>
-                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
-                             </div>
-                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
-                             </div>
-                             <div class="button">
-                                <button type="submit">Send message</button>
-                             </div>
-                        </div>
-                        
-                    </form>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-btn2">Submit</button>
+                     </form>
+                     <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -255,6 +240,24 @@
         ScrollReveal().reveal('.title', { delay: 500, origin: 'left'});
         ScrollReveal().reveal('.about, skills, .projects-box, contact', {origin: 'bottom'});
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxrWmY1sQS0ESd8ikPlwblK1ISi_5CQl0JDsEvESEAXFLoF1VQEC5IrMrN07fIMMduK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
