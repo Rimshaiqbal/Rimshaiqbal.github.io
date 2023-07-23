@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     // owl animation script
     var typed = new Typed(".typing",{
-        strings:["Web Developer","Designer","Front-End Developer"],
+        strings:["Web Developer","Web Designer"],
         typeSpeed: 100,
         backspeed: 60,
         loop: true
@@ -27,22 +27,22 @@ $(document).ready(function(){
     });
      
     var typed = new Typed(".typing-2",{
-        strings:["I am currently studying ","Web Technology Specialist","at TriOS College"],
-        typeSpeed: 100,
+        strings:["Rimsha Iqbal","Web Technology Specialist"],
+        typeSpeed: 70,
         backspeed: 60,
         loop: true
     });
     
     var typed = new Typed(".typing-3",{
         strings:["Technical Skills ", "Course Load"],
-        typeSpeed: 100,
+        typeSpeed: 70,
         backspeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-4",{
         strings:["Feel Free To ", "Get In Touch"],
-        typeSpeed: 100,
+        typeSpeed: 70,
         backspeed: 60,
         loop: true
     });
