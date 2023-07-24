@@ -229,7 +229,7 @@ section{
 section{
     padding: 100px 0;
 }
-.about, .skills .projects .contact .footer{
+.about .skills .projects .contact .footer{
     font-family: 'poppins', sans-serif;
 }
 .about .about-content,
@@ -422,12 +422,14 @@ margin-bottom: 15px;
 
 }
 
+
 /* contact section styling */
 .contact {
     background-color: #111;
 }
 .contact .title{
     color: #fff;
+    margin: 0 0 1.5rem;
 }
 .contact .title::before{
     background: #fff;
@@ -439,7 +441,7 @@ margin-bottom: 15px;
 }
 
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: calc(50% - 50px);
 }
 
 .contact .contact-content .text{
@@ -513,7 +515,7 @@ form input, form textarea{
 /* footer section styling */
 footer{
     background: #fff;
-    padding: 10px 5px;
+    padding: 4px 3px;
     color: #111;
 }
 footer span a{
@@ -719,9 +721,18 @@ footer span a:hover{
         font-weight: 600;
         margin-bottom: 10px;
     }
-    .skills .skills-content .left p{
-      text-align: justify;
-        font-family: 'Poppins', sans-serif;
+
+    footer{
+        background: #fff;
+        padding: 5px 2px;
+        color: #111;
+    }
+    footer span a{
+        color: #02A4D3;
+        text-decoration: none;
+    }
+    footer span a:hover{
+        text-decoration: underline;
     }
     .html {
         scroll-behavior: smooth;

@@ -23,8 +23,8 @@
             <li><a href="#home" class="menu-btn">Home</a></li>
             <li><a href="#about" class="menu-btn">About</a></li>
             <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#projects" class="menu-btn">Projects</a></li> 
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
+            <li><a href="#projects" class="menu-btn">Projects</a></li>
+           <li><a href="#contact" class="menu-btn">Contact</a></li>
             
         </ul>
         <div class="menu-btn">
@@ -175,7 +175,7 @@
     </div>
  </div>
 </section>
-    
+
 <!--contact section start-->
     <section class="contact" id="contact">
         <div class="max-width">
@@ -238,7 +238,7 @@
         });
 
         ScrollReveal().reveal('.title', { delay: 500, origin: 'left'});
-        ScrollReveal().reveal('.about, skills, .projects-box, contact', {origin: 'bottom'});
+        ScrollReveal().reveal('.about, skills, .projects-box,  contact', {origin: 'bottom'});
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxrWmY1sQS0ESd8ikPlwblK1ISi_5CQl0JDsEvESEAXFLoF1VQEC5IrMrN07fIMMduK/exec'
@@ -253,7 +253,7 @@
             msg.innerHTML = "Message sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""
-            },4000)
+            },3000)
             form.reset()
         })
             .catch(error => console.error('Error!', error.message))
