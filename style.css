@@ -766,6 +766,12 @@ footer span a:hover{
         text-align: center;
         font-family: 'Poppins', sans-serif;
     }
+    .about .about-content .left img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
 }
 @media (max-width: 400px){
     .home .home-content .text-2{
