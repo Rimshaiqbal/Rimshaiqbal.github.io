@@ -290,7 +290,7 @@ section .title::after{
 .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     
 }
 .skills .skills-content .left .text span{
@@ -299,7 +299,18 @@ section .title::after{
 }
 .skills .skills-content .left p{
     text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.skills .skills-content .right .text{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+}
+.skills .skills-content .right .text span{
+    color: #02A4D3;
+    font-size: 25px;
 }
 .skills .skills-content .right .bars{
 margin-bottom: 15px;
@@ -329,7 +340,7 @@ margin-bottom: 15px;
     background: #02A4D3;
 }
 .skills-content .right .github::before{
-    width: 75%;
+    width: 80%;
 }
 .skills-content .right .wordpress::before{
     width: 93%;
@@ -337,11 +348,11 @@ margin-bottom: 15px;
 .skills-content .right .angular::before{
     width: 70%;
 }
-.skills-content .right .wframing::before{
-    width: 90%;
+.skills-content .right .Wframing::before{
+    width: 95%;
 }
 .skills-content .right .RWD::before{
-    width: 95%;
+    width: 90%;
 }
 
 /*--project section start--*/
@@ -743,6 +754,21 @@ footer span a:hover{
     .home .home-content .text-2{
         font-size: 50px;
     }
+    .skills .skills-content .left .text span{
+        color:#02A4D3;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
+    .skills .skills-content .left p .br{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@media (max-width: 400px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+  
 }
 #msg{
     color: #61b752;

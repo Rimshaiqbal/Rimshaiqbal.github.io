@@ -46,6 +46,7 @@ $(document).ready(function(){
         backspeed: 60,
         loop: true
     });
+   
 
     //toggle menu/navbar script
     $('.menu-btn').click(function(){
