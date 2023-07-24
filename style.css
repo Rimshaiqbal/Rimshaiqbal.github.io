@@ -724,8 +724,9 @@ footer span a:hover{
 
     footer{
         background: #fff;
-        padding: 5px 2px;
+        padding: 3px 1px;
         color: #111;
+        font-size: 13px;
     }
     footer span a{
         color: #02A4D3;
