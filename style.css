@@ -714,7 +714,7 @@ footer span a:hover{
     }
     .about .about-content .right .text span{
         color: #02A4D3;
-        font-size: 20px;
+        font-size: 15px;
     }
     .about .about-content .right .text{
         font-size:  20px;
@@ -738,6 +738,10 @@ footer span a:hover{
         scroll-behavior: smooth;
       }
 }
+@media (max-width: 300px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
 #msg{
     color: #61b752;
     margin-top: 10px;
