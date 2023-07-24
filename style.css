@@ -301,6 +301,9 @@ section .title::after{
     text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
+.skills .skills-content .left span{
+    color:#02A4D3;
+}
 .skills .skills-content .right .text{
     text-align: center;
     margin-bottom: 10px;
